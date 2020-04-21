@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Glance at Data Science</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			
+				<section>	
+					<h1> Glance at Data Science </h1>
+					<h3> Brief intro to Pandas </h3>
+					<p> By <a href="https://www.linkedin.com/in/anthony-felts/">Anthony Felts</a>
+				</section>
+				
+				<section>
+					<h2>Who am I?</h2>
+					<ul>
+						<li>Computer Engineering Major</li>
+						<li>Security Engineering Intern @ <a href="https://databricks.com/">Databricks</a></li>
+						<li>Experience with data-science, far from an expert</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Assumptions and Objectives</h2>
+					<h6>Assumptions</h6>
+					<ul>
+						<li>Assuming everyone familiar with basic python</li>
+						<li>Nothing else</li>
+					</ul>
+					<h6>Objectives</h6>
+					<ul>
+						<li>You will not be expert at data science, or even pandas</li>
+						<li>Goal is to give a glimpse of basic data science and provide resources for further learning</li>
+					</ul>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Setup</h2>
+						<h3>Use Databricks</h3>
+						<ul>
+							<li>Community Edition Free</li>
+							<li>COVID-19 dataset accessable in the platform</li>
+							<li>Far more scalable than traditional approach</li>
+						</ul>
+					</section>
+				</section>
+		
+				<section>
+				<section>
+					<h3>Why Python Notebooks</h3>
+					<ul>
+						<li>All code in one place</li>
+						<li>Easily sharable</li>
+						<li>Easy to limit overhead</li>
+					</ul>
+				</section>
+				<section data-background="jpg/basic.jpg">
+				</section>
+				</section>
+				
+				<section>
+				<section>
+					<h3>Raw data, now what?</h3>
+					<img data-src="jpg/rawdata.jpg">
+				</section>
+				<section data-background="jpg/importData.jpg">
+				</section>
+				<section data-background="jpg/dfbasics.jpg">
+				</section>
+				</section>
+								
+				<section data-markdown>
+					<script type="text/template">
+						### Slighty more advanced
+						##### Advancedish manipulations of a dataframe
+						* `object.sort_values("value to sort" ascending=False)`
+						* `object[object['column' = 'value']]`
+						* `object.goupby('objects-column')`
+					</script>
+				</section>
+				
+				<section>
+				<section>
+					<h3>Let's try those</h3>
+				</section>
+				<section data-background="jpg/sortBy.jpg">
+				</section>
+				<section data-background="jpg/addUSonly.jpg">
+				</section>
+				<section data-background="jpg/addgroupby.jpg">
+				</section>
+				</section>
+				
+				<section>
+					<h3>Slightly more advanced</h3>
+					<h5>Useful manipulations of a dataframe</h5>
+					<ul>
+						<li>object.sort_values("value to sort" ascending=False)</li>
+						<li>Easily sharable</li>
+						<li>Easy to limit overhead</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h3>Where can you go now?</h3>
+					</section>
+					<section>
+						<h3>Graphs?</h3>
+						<a href="https://matplotlib.org/">
+						<img data-src="https://matplotlib.org/_static/logo2_compressed.svg">
+						</a>
+					</section>
+					<section>
+						<h3>Basic ML?</h3>
+						<a href="https://scikit-learn.org/stable/">
+						<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1280px-Scikit_learn_logo_small.svg.png">
+						</a>
+					</section>
+				</section>
+				
+				<section>
+					<h3>Questions</h3>
+					<p>If anything comes up:
+					<a href="mailto:aefelts@ucsc.edu">aefelts@ucsc.edu</a> </p>
+					
+					<p>
+					Notebook and presention repo: 
+					<a href="https://github.com/">github</a> </p>
+				</section>
+				
+				<section>
+					<h2>Pretty Code</h2>
+					<pre><code class="hljs" data-trim data-line-numbers="4,8-9">
+
+import React, { useState } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;You clicked {count} times&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;
+        Click me
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+			
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
